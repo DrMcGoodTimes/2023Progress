@@ -1,0 +1,70 @@
+/*
+COLOR SCHEME
+Mustard:            #FEDB59
+Kombu Green:        #373D20
+Spanish Bistre:     #717744
+Umber:              #766153
+Royal Dark Blue:    #01295F
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #766153;
+    padding: 20px;
+}
+
+#topInfo {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#titleSpan {
+    color: #012975;
+    font-size: 2.25em;
+    font-weight: 600;
+    margin: auto;
+}
+
+.post {
+    border: 3px solid #373D20;
+    border-radius: 30px;
+    background-color: #717744;
+    padding: 10px;
+    color: #FEDB59;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "date mood" "tasks comment" "links badges";
+    gap: 5px 15px;
+    margin-bottom: 15px;
+}
+
+.showDate {
+    grid-area: date;
+    font-size: 1.5em;
+}
+
+.showMood {
+    grid-area: mood;
+    text-align: right;
+}
+
+.taskList {
+    grid-area: tasks;
+}
+
+.showComments {
+    grid-area: comment;
+}
+
+.showLinks {
+    grid-area: links;
+}
+
+.showBadges {
+    grid-area: badges;
+}
