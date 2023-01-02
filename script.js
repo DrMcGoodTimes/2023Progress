@@ -31,6 +31,7 @@ const PROGRESSPOSTS = [
     tages: [],
     links: {},
     badges: []
+    }
 ]
 
 document.addEventListener("DOMContentLoaded", function() {
