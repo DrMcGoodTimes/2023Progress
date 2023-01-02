@@ -26,7 +26,7 @@ const PROGRESSPOSTS = [
     month: "January",
     day: 1,
     mood: "Lethargic",
-    tasks: ["Celebrate New Year's Day, Get back home"],
+    tasks: ["Celebrate New Year's Day", "Get back home"],
     comments: "I don't like having the first post of the 2023 be less-than-productive, but I promised to spend most of the day with my parents, then we did a family game night with my brothers from around the country when I got back. Tomorrow, I'm going to get some actual code stuff done.  Maybe get the links and badges functionality working on this project to show off links to tutorials/repos I work on and display which programs/languages I'm using any given day.",
     tages: [],
     links: {},
