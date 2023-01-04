@@ -41,6 +41,16 @@ const PROGRESSPOSTS = [
     tags: [],
     links: {},
     badges: []
+    },
+    {year: 2023,
+     month: "January",
+     day: 3,
+     mood: "Low",
+     tasks: ["First day of work of the new year"],
+     comments: "Ended up getting distracted by a lot during work today.  Lot of fun things happened with regards to politics today, what with the House votes and all the Santos stuff.  Trying to pull myself together and work, despite still feeling gross and tired.",
+     tags: [],
+     links: {},
+     badges: []
     }
 ]
 
