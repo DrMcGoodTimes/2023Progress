@@ -51,6 +51,16 @@ const PROGRESSPOSTS = [
      tags: [],
      links: {},
      badges: []
+    },
+    {year: 2023,
+     month: "January",
+     day: 4,
+     mood: "Distracted",
+     tasks: ["Add link functionality to this project"],
+     comments: "It isn't much, but I'm trying to get into gear for 2023.  I didn't expect to come out of the gate swinging, but I will admit that I'm dragging my feet harder than I would like.  Making these sorts of changes is hard and, especially when you live alone, there's no one to hold you accountable but yourself.",
+     tags: [],
+     links: [["https://javascript.info/","javascript.info, which I've been casually perusing for the past few days"]],
+     badges: []
     }
 ]
 
@@ -62,14 +72,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         holder.innerHTML = `
             <div class="showDate">${x.month} ${x.day}</div>
+
             <div class="showMood">Feelin' ${x.mood}</div>
+            
             <div class="taskList">
             ${x.tasks.map(function (thing) {
-                return "<div class='task'>" + thing + "</div>"
+                return '<div class="task">' + thing + '</div>'
             }).join("")}
             </div>
+            
             <div class="showComments">${x.comments}</div>
-            <div class="showLinks"></div>
+            
+            <div class="showLinks">${x.links.map(function (thing) {
+                return '<a href="'+ thing[0] +'">'+ thing[1] +'</a>'
+            })}</div>
+            
             <div class="showBadges"><div>
         `;
 
